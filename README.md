@@ -17,8 +17,8 @@ This project is a comprehensive system for processing PDF documents, embedding t
 
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/Ranjive/document-processing-embedding-api.git
-    cd document-processing-embedding-api
+    git clone https://github.com/Ranjive/RAG.git
+    cd RAG
     ```
 
 2. **Create and activate a virtual environment**
