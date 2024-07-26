@@ -45,6 +45,9 @@ Use Azure OpenAI's Ada model to generate embeddings for the text chunks.
 
 ### Step 4: Store Embeddings
 Store the generated embeddings in a Chroma database.
+```bash
+python embed.py
+```
 
 ### Step 5: Run the API
 Start the Flask API to handle similarity search queries.
