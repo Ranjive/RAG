@@ -49,9 +49,12 @@ Store the generated embeddings in a Chroma database.
 ### Step 5: Run the API
 Start the Flask API to handle similarity search queries.
 ```bash
-python api.py ```
+python api.py
+```
 
 ### Step 6 Run the Frontend
 run the frontend in another terminal
+```bash
 streamlit run frontend.py
+
 
