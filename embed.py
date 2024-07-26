@@ -51,13 +51,7 @@ def store_embeddings(text_chunks, embeddings):
     for i, (chunk, embedding) in enumerate(zip(text_chunks, embeddings)):
         collection.add(ids=f"doc_{i}", documents=chunk, embeddings=embedding)
 
-def similarity_search(query, top_k=5):
-    query_embedding = get_embeddings([query])[0]
-    results = collection.query(
-        query_embeddings=[query_embedding],
-        n_results=top_k
-    )
-    return results
+
 def process_pdf(pdf_path):
     text = extract_text_from_pdf(pdf_path)
     text_chunks = chunk_text(text)
@@ -66,6 +60,3 @@ def process_pdf(pdf_path):
 
 pdf_path = 'venv/max-life-group-credit-life-secure-policy-document-v1.pdf'
 process_pdf(pdf_path)
-query = "Insurance"
-results = similarity_search(query)
-print(results)
